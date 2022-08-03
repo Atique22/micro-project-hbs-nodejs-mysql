@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>home Page</title>
+</head>
+
+<body>
+
+    <div class="relative float-left w-full h-screen bg-no-repeat bg-cover bg-center overflow-hidden">
+       
+        <header class="text-white-200 body-font ">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    Clicky Intern
+                </a>
+            </div>
+        </header>
+        
+        <video class="relative w-full overflow-hidden" playsinline autoplay muted loop>
+            <source class="object-fill h-48 w-96" src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+        </video>
+
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.1);">
+            <div class="flex justify-center items-center h-full">
+                <div class="text-white text-center px-14 px-md-0">
+                    <h2 class="text-3xl font-semibold mb-4">Clicky Intern and Trainee</h2>
+                    <h5 class="text-lg font-semibold mb-6">Best & free guide of responsive web design</h5>
+                    <div class="md:space-x-2">
+                        <a type="button"
+                            class="inline-block px-6 py-2 mb-2 md:mb-0 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-sky-700 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                            href="./register" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">Registration</a>
+                        <a type="button"
+                            class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black-900 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                            href="./login" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">Login Here  !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
