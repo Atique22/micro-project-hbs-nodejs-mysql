@@ -4,7 +4,7 @@ const path = require("path");
 const hbs = require('hbs');
 const mysql = require('./data_base/connection').conn;
 const app = express();
-const port = 3000;
+const port = 3008;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "hbs");
@@ -50,8 +50,8 @@ app.get('/update_data', (req, res) => {
 //DELETE DATA
 app.get('/delete/(:id)', (req, res) => {
     console.log("id check=" + req.params.id);
-    let id = req.params.id;
-    var qry_delete = "DELETE FROM `registration` WHERE id = ?";
+    let UserId = req.params.id;
+    var qry_delete = `DELETE FROM registration WHERE id = ${UserId}`;
     mysql.query(qry_delete, (err, result) => {
         if (err) throw err;
         console.log("deleted successfully!");
